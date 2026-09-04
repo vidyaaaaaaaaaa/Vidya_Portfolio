@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vidya Shree — CSE Student &amp; Developer</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=JetBrains+Mono:wght@400;500;600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+
+  <!-- Preloader overlay -->
+  <div id="loader" class="loader-overlay">
+    <div class="loader-bar-container">
+      <div id="loader-bar" class="loader-bar"></div>
+    </div>
+    <div id="loader-text" class="loader-text">Loading 0%</div>
+  </div>
+
+  <!-- Fixed full-screen canvas background for cinematic frame sequence -->
+  <canvas id="canvas"></canvas>
+
+  <!-- Navigation Header -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a href="#top" class="nav__mark">Vidya Shree</a>
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about" data-nav>ABOUT</a></li>
+        <li><a href="#skills" data-nav>SKILLS</a></li>
+        <li><a href="#hobbies" data-nav>OFF-SCRIPT</a></li>
+        <li><a href="#projects" data-nav>WORK</a></li>
+        <li><a href="#certifications" data-nav>CERTIFICATIONS</a></li>
+        <li><a href="#contact" data-nav>CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Scrollable Content -->
+  <main id="top" class="main-content">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__inner">
+        <p class="eyebrow">B.TECH CSE · CMR UNIVERSITY · GRADUATING 2028</p>
+        <h1 class="hero__title">
+          Vidya Shree <span class="hero__title-sub">learning. building.<br>figuring it out.</span>
+        </h1>
+        <p class="hero__lede">
+          Computer science student exploring software, AI, and cybersecurity, with a growing interest in ethical hacking and how systems work beneath the surface.
+        </p>
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary">SEE THE WORK</a>
+          <a href="#contact" class="btn btn--ghost">SAY HELLO</a>
+        </div>
+      </div>
+      <a href="#about" class="scroll-cue" aria-label="Scroll to about section">
+        <span>SCROLL ↓</span>
+      </a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="section__head">
+        <p class="eyebrow">about</p>
+        <h2>A little about me.</h2>
+      </div>
+      <div class="about__grid">
+        <div class="about__copy">
+          <p>
+            I’m Vidya Shree, a Computer Science Engineering student graduating in 2028 who enjoys understanding how things work and then trying to build them myself.
+          </p>
+          <p>
+            I’m exploring software development, AI, web development, databases, cybersecurity, and ethical hacking while strengthening my fundamentals and working on real projects.
+          </p>
+          <p>
+            I’m still learning, still experimenting, and occasionally breaking things just to figure out why they broke.
+          </p>
+        </div>
+        <div class="about__terminal" aria-hidden="true">
+          <div class="terminal__bar">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="terminal__title">about.sh</span>
+          </div>
+          <div class="terminal__body">
+            <p><span class="prompt">$</span> whoami</p>
+            <p class="out">vidya shree — cse student, graduating in 2028</p>
+            <p><span class="prompt">$</span> cat focus.txt</p>
+            <p class="out">software • ai • web development • databases • cybersecurity • ethical hacking • c • c++</p>
+            <p><span class="prompt">$</span> cat mindset.txt</p>
+            <p class="out">learning • building • experimenting • figuring it out</p>
+            <p><span class="prompt typing">$</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section skills" id="skills">
+      <div class="section__head">
+        <p class="eyebrow">skills</p>
+        <h2>What I work &amp; build with.</h2>
+        <p class="section__note">Core fundamentals established, with new domains actively being explored.</p>
+      </div>
+      <div class="skills__grid">
+
+        <!-- Languages -->
+        <article class="skill-card">
+          <p class="skill-card__num">01</p>
+          <h3>Languages</h3>
+          <p>Core programming fundamentals and algorithmic problem solving.</p>
+          <ul class="tag-list">
+            <li>C</li><li>C++</li><li>Python</li><li>Java</li><li>JavaScript</li>
+          </ul>
+        </article>
+
+        <!-- Development & Web -->
+        <article class="skill-card">
+          <p class="skill-card__num">02</p>
+          <h3>Web Development</h3>
+          <p>Building responsive web applications and interactive front-end interfaces.</p>
+          <ul class="tag-list">
+            <li>HTML</li><li>CSS</li><li>Web Development</li>
+            <li class="tag--exploring">React <span class="badge">Exploring</span></li>
+            <li class="tag--exploring">Node.js <span class="badge">Exploring</span></li>
+          </ul>
+        </article>
+
+        <!-- Databases -->
+        <article class="skill-card">
+          <p class="skill-card__num">03</p>
+          <h3>Databases</h3>
+          <p>Data modeling, relational queries, and structured storage.</p>
+          <ul class="tag-list">
+            <li>MySQL</li>
+            <li class="tag--exploring">MongoDB <span class="badge">Exploring</span></li>
+          </ul>
+        </article>
+
+        <!-- AI & Emerging Tech -->
+        <article class="skill-card">
+          <p class="skill-card__num">04</p>
+          <h3>AI</h3>
+          <p>Fundamentals of machine learning algorithms and intelligent systems.</p>
+          <ul class="tag-list">
+            <li>AI</li><li>ML Basics</li><li>Prompting</li>
+          </ul>
+        </article>
+
+        <!-- Cybersecurity -->
+        <article class="skill-card">
+          <p class="skill-card__num">05</p>
+          <h3>Cybersecurity</h3>
+          <p>Understanding systems, network protocols, and security beneath the surface.</p>
+          <ul class="tag-list">
+            <li>Cybersecurity</li>
+            <li>Networking</li><li>Linux</li>
+            <li class="tag--exploring">Ethical Hacking <span class="badge">Exploring</span></li>
+          </ul>
+        </article>
+
+        <!-- Tools -->
+        <article class="skill-card">
+          <p class="skill-card__num">06</p>
+          <h3>Tools</h3>
+          <p>Daily workflow, version control, and development environments.</p>
+          <ul class="tag-list">
+            <li>Git</li><li>GitHub</li><li>VS Code</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- WORK / PROJECTS -->
+    <section class="section projects" id="projects">
+      <div class="section__head">
+        <p class="eyebrow">work</p>
+        <h2>Things I’ve built.</h2>
+      </div>
+      <div class="projects__grid">
+
+        <article class="project-card">
+          <div class="project-card__top">
+            <span class="project-card__tag">Project 01</span>
+          </div>
+          <h3>Python Game</h3>
+          <p>A game built using Python exploring game loop mechanics, graphics, and interactive logic.</p>
+          <ul class="tag-list tag-list--dim">
+            <li>Python</li><li>Game Dev</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__top">
+            <span class="project-card__tag">Project 02</span>
+          </div>
+          <h3>Database Management System</h3>
+          <p>A database project using MySQL for managing structured data records, relationships, and queries.</p>
+          <ul class="tag-list tag-list--dim">
+            <li>MySQL</li><li>Database</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__top">
+            <span class="project-card__tag">Project 03</span>
+          </div>
+          <h3>Arduino Maze Controller</h3>
+          <p>An Arduino-based maze controller combining programming, sensor inputs, and electronics.</p>
+          <ul class="tag-list tag-list--dim">
+            <li>Arduino</li><li>C++</li><li>Hardware</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__top">
+            <span class="project-card__tag">Project 04</span>
+          </div>
+          <h3>Study Buddy</h3>
+          <p>A collaborative study platform where students can create or join group study sessions, add their schedules, and coordinate study time with others.</p>
+          <ul class="tag-list tag-list--dim">
+            <li>Web Dev</li><li>Full Stack</li><li>Collaboration</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__top">
+            <span class="project-card__tag">Project 05 · <span class="badge badge--ongoing">Ongoing / Currently Working On</span></span>
+          </div>
+          <h3>Cybersecurity Projects</h3>
+          <p>Currently working on projects related to cybersecurity, network analysis, and ethical hacking fundamentals.</p>
+          <ul class="tag-list tag-list--dim">
+            <li>Cybersecurity</li><li>Ethical Hacking</li><li>Networking</li>
+          </ul>
+        </article>
+
+      </div>
+      <p class="projects__supporting">More projects coming as I build them.</p>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="section certifications" id="certifications">
+      <div class="section__head">
+        <p class="eyebrow">certifications</p>
+        <h2>Proof of curiosity.</h2>
+        <p class="section__note">Courses, certifications, and things I’ve picked up along the way.</p>
+      </div>
+      <div class="certifications__grid">
+
+        <article class="cert-card">
+          <span class="cert-card__year">2024</span>
+          <h3>Cybersecurity &amp; Networking Fundamentals</h3>
+          <p class="cert-card__platform">Online Course / Learning Platform</p>
+          <a href="#" class="cert-card__link">View credential →</a>
+        </article>
+
+        <article class="cert-card">
+          <span class="cert-card__year">2024</span>
+          <h3>Python &amp; Data Structures</h3>
+          <p class="cert-card__platform">Online Course / Learning Platform</p>
+          <a href="#" class="cert-card__link">View credential →</a>
+        </article>
+
+        <article class="cert-card">
+          <span class="cert-card__year">2023</span>
+          <h3>Web Development Fundamentals</h3>
+          <p class="cert-card__platform">Online Course / Learning Platform</p>
+          <a href="#" class="cert-card__link">View credential →</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- OFF-SCRIPT / HOBBIES -->
+    <section class="section hobbies" id="hobbies">
+      <div class="section__head">
+        <p class="eyebrow">off-script</p>
+        <h2>Beyond the screen.</h2>
+      </div>
+      <div class="hobbies__copy">
+        <p>
+          Not everything I enjoy happens in a code editor.
+        </p>
+        <p>
+          Bharatanatyam keeps me connected to rhythm and discipline. Running gives me somewhere to think. And I’m usually curious enough to try learning something completely unrelated to what I’m supposed to be doing.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="contact__inner">
+        <p class="eyebrow">contact</p>
+        <h2>Have something in mind?</h2>
+        <p class="contact__lede">Let’s build something, talk tech, or just say hello.</p>
+        <div class="contact__links">
+          <a href="mailto:vidyashree8923@gmail.com" class="contact__email">vidyashree8923@gmail.com</a>
+          <div class="contact__social">
+            <a href="https://github.com/vidyaaaaaaaaaa" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <span class="sep">·</span>
+            <a href="https://www.linkedin.com/in/vidya-shree-b57049331/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Built by Vidya Shree — CSE '28, CMR University.</p>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
