@@ -16,7 +16,9 @@ let lastDrawnFrameIndex = -1;
 
 function getFramePath(index) {
   const frameNum = String(index + 1).padStart(3, '0');
-  return `/frames/ezgif-frame-${frameNum}.jpg`;
+  const base = import.meta.env.BASE_URL || '/';
+  const prefix = base.endsWith('/') ? base : `${base}/`;
+  return `${prefix}frames/ezgif-frame-${frameNum}.jpg`;
 }
 
 function resizeCanvas() {
