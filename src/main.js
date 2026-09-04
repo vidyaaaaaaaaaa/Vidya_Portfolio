@@ -256,7 +256,7 @@ function setActiveLink() {
 
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const revealTargets = document.querySelectorAll(
-  '.section__head, .about__copy, .about__terminal, .skill-card, .cert-card, .hobbies__copy, .project-card, .contact__inner'
+  '.section__head, .about__copy, .skill-card, .cert-card, .hobbies__copy, .project-card, .contact__inner'
 );
 revealTargets.forEach(el => el.classList.add('reveal'));
 
